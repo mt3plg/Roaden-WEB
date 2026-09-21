@@ -101,7 +101,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .brand { display: inline-flex; align-items: center; gap: .9rem; font-size: clamp(1.15rem, 2vw, 1.48rem); font-weight: 520; letter-spacing: -.04em; }
-.brand-mark { width: 2rem; color: var(--primary); filter: drop-shadow(0 0 12px rgba(185,244,46,.2)); }
+.brand-icon { width: 2rem; height: 2rem; object-fit: cover; border-radius: .45rem; filter: drop-shadow(0 0 12px rgba(185,244,46,.2)); }
 .top-actions { display: flex; align-items: center; gap: 2rem; }
 
 .support-button {
@@ -249,7 +249,7 @@ a { color: inherit; text-decoration: none; }
   .header-support { display: none; }
   .top-actions { gap: .5rem; }
   .brand { font-size: 1.2rem; }
-  .brand-mark { width: 1.75rem; }
+  .brand-icon { width: 1.75rem; height: 1.75rem; border-radius: .38rem; }
   .hero-image { background-position: 39% center; }
   .hero-copy { top: 21vh; }
   .eyebrow { font-size: .62rem; letter-spacing: .42em; }

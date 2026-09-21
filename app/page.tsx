@@ -41,17 +41,15 @@ const contacts = [
   },
 ];
 
-function BrandMark() {
+function BrandIcon() {
   return (
-    <svg aria-hidden="true" className="brand-mark" viewBox="0 0 38 20" fill="none">
-      <path d="M2 14.5 10.2 5l8.4 9.5L27.6 4 36 11" stroke="currentColor" strokeWidth="3.4" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
+    <img aria-hidden="true" className="brand-icon" src="/roaden-icon.png" alt="" />
   );
 }
 
 function SupportButton({ className = '' }: { className?: string }) {
   return (
-    <a className={`support-button ${className}`} href="mailto:hello@routemate.app?subject=Support%20RouteMate">
+    <a className={`support-button ${className}`} href="mailto:hello@routemate.app?subject=Support%20Roaden">
       <span>Support the project</span>
       <ArrowUpRight aria-hidden="true" />
     </a>
@@ -66,9 +64,9 @@ export default function Home() {
       <div className="ambient ambient-one" aria-hidden="true" />
 
       <header className="topbar">
-        <a className="brand" href="#top" aria-label="RouteMate — на головну">
-          <BrandMark />
-          <span>RouteMate</span>
+        <a className="brand" href="#top" aria-label="Roaden — на головну">
+          <BrandIcon />
+          <span>Roaden</span>
         </a>
 
         <div className="top-actions">
@@ -80,10 +78,10 @@ export default function Home() {
             </SheetTrigger>
             <SheetContent className="route-menu" showCloseButton>
               <SheetHeader className="route-menu-header">
-                <SheetTitle className="route-menu-title">RouteMate</SheetTitle>
+                <SheetTitle className="route-menu-title">Roaden</SheetTitle>
                 <SheetDescription className="route-menu-description">Driven by people. Built for the road.</SheetDescription>
               </SheetHeader>
-              <nav className="route-menu-nav" aria-label="Контакти RouteMate">
+              <nav className="route-menu-nav" aria-label="Контакти Roaden">
                 {contacts.map(({ label, href }) => (
                   <a key={label} href={href} target={href.startsWith('http') ? '_blank' : undefined} rel="noreferrer">
                     <span>{label}</span>
@@ -106,7 +104,7 @@ export default function Home() {
         <div className="route-line" aria-hidden="true"><i /></div>
       </section>
 
-      <section className="contact-panel" aria-label="Зв’язатися з RouteMate">
+      <section className="contact-panel" aria-label="Зв’язатися з Roaden">
         <div className="contact-row">
           {contacts.map(({ label, value, href, icon: Icon }) => (
             <a
@@ -129,7 +127,7 @@ export default function Home() {
       </section>
 
       <div className="corner-note corner-note-left" aria-hidden="true">
-        <strong>RouteMate</strong>
+        <strong>Roaden</strong>
         <span>Driven by people</span>
       </div>
       <div className="corner-note corner-note-right" aria-hidden="true">

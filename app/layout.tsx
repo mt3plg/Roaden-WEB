@@ -13,19 +13,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://routemate.app'),
-  title: 'RouteMate — More roads. Better people.',
-  description: 'RouteMate connects people through the roads they share.',
+  metadataBase: new URL('https://routemate.vladyslav-tsyndrin-p.chatgpt.site'),
+  title: 'Roaden — More roads. Better people.',
+  description: 'Roaden connects people through the roads they share.',
+  icons: {
+    icon: '/roaden-icon.png',
+    apple: '/roaden-icon.png',
+  },
   openGraph: {
-    title: 'RouteMate — More roads. Better people.',
-    description: 'RouteMate connects people through the roads they share.',
+    title: 'Roaden — More roads. Better people.',
+    description: 'Roaden connects people through the roads they share.',
     type: 'website',
-    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'RouteMate — More roads. Better people.' }],
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Roaden — More roads. Better people.' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'RouteMate — More roads. Better people.',
-    description: 'RouteMate connects people through the roads they share.',
+    title: 'Roaden — More roads. Better people.',
+    description: 'Roaden connects people through the roads they share.',
     images: ['/og.png'],
   },
 };
