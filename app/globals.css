@@ -203,17 +203,11 @@ a { color: inherit; text-decoration: none; }
 }
 .contact-icon { height: 1.3rem; color: rgba(255,255,255,.9); transition: color .3s ease, transform .3s ease; }
 .contact-icon svg { width: 1.25rem; height: 1.25rem; stroke-width: 1.7; }
-.x-icon { display: block; font-size: 1.24rem; line-height: 1; }
 .contact-label { font-family: var(--font-geist-mono), monospace; font-size: .52rem; text-transform: uppercase; letter-spacing: .35em; color: rgba(224,230,226,.57); }
 .contact-value { font-size: .78rem; letter-spacing: -.01em; color: rgba(236,240,237,.58); transition: color .3s ease; }
 .contact-card:hover .contact-icon { color: var(--primary); transform: translateY(-2px); }
 .contact-card:hover .contact-value { color: rgba(255,255,255,.95); }
 .footer-support { min-width: 13.8rem; animation: reveal-up 1s 1.22s cubic-bezier(.2,.8,.2,1) both; }
-
-.corner-note { position: absolute; bottom: 2.6rem; z-index: 2; display: flex; flex-direction: column; gap: .35rem; color: rgba(216,222,218,.34); text-transform: uppercase; font-family: var(--font-geist-mono), monospace; font-size: .56rem; letter-spacing: .28em; }
-.corner-note strong { font-weight: 500; letter-spacing: .16em; text-transform: none; }
-.corner-note-left { left: clamp(1.5rem, 5vw, 4.1rem); }
-.corner-note-right { right: clamp(1.5rem, 5vw, 4.1rem); text-align: right; }
 
 .route-menu {
   width: min(92vw, 27rem) !important;
@@ -236,7 +230,6 @@ a { color: inherit; text-decoration: none; }
 .route-menu-nav a svg { width: 1rem; color: var(--primary); }
 .route-menu-nav a:hover { color: var(--primary); padding-left: .45rem; }
 .menu-support { margin-top: 1.8rem; width: 100%; }
-.menu-index { margin-top: auto; display: flex; justify-content: space-between; color: rgba(255,255,255,.3); font-family: var(--font-geist-mono), monospace; font-size: .54rem; letter-spacing: .15em; }
 
 @keyframes cinematic-in { from { opacity: 0; transform: scale(1.11); filter: saturate(.65); } to { opacity: 1; transform: scale(1.035); filter: saturate(1); } }
 @keyframes reveal-down { from { opacity: 0; transform: translateY(-18px); } to { opacity: 1; transform: translateY(0); } }
@@ -262,14 +255,11 @@ a { color: inherit; text-decoration: none; }
   .contact-label { font-size: .48rem; }
   .contact-value { font-size: .75rem; }
   .footer-support { display: inline-flex; height: 3rem; }
-  .corner-note { bottom: 1.5rem; }
-  .corner-note-right { display: none; }
 }
 
 @media (max-height: 760px) and (min-width: 641px) {
   .hero-copy { top: 8.5rem; }
   .contact-panel { bottom: 4.3rem; gap: 1.25rem; }
-  .corner-note { bottom: 1.2rem; }
   .topbar { padding-top: 1.45rem; padding-bottom: 1.45rem; }
 }
 

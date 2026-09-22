@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowUpRight, Mail } from 'lucide-react';
+import { ArrowUpRight, Mail, Send } from 'lucide-react';
 import {
   Sheet,
   SheetContent,
@@ -23,21 +23,21 @@ function InstagramIcon() {
 const contacts = [
   {
     label: 'Instagram',
-    value: '@routemate.app',
-    href: 'https://instagram.com/routemate.app',
+    value: '@roadenapp',
+    href: 'https://www.instagram.com/roadenapp/',
     icon: InstagramIcon,
   },
   {
     label: 'Email',
-    value: 'hello@routemate.app',
-    href: 'mailto:hello@routemate.app',
+    value: 'roadenapp@gmail.com',
+    href: 'mailto:roadenapp@gmail.com',
     icon: Mail,
   },
   {
-    label: 'X (Twitter)',
-    value: '@routemateapp',
-    href: 'https://x.com/routemateapp',
-    icon: null,
+    label: 'Telegram',
+    value: 'Roaden channel',
+    href: 'https://t.me/+YchW_ySrsRZkYTJi',
+    icon: Send,
   },
 ];
 
@@ -49,7 +49,7 @@ function BrandIcon() {
 
 function SupportButton({ className = '' }: { className?: string }) {
   return (
-    <a className={`support-button ${className}`} href="mailto:hello@routemate.app?subject=Support%20Roaden">
+    <a className={`support-button ${className}`} href="mailto:roadenapp@gmail.com?subject=Support%20Roaden">
       <span>Support the project</span>
       <ArrowUpRight aria-hidden="true" />
     </a>
@@ -90,7 +90,6 @@ export default function Home() {
                 ))}
               </nav>
               <SupportButton className="menu-support" />
-              <div className="menu-index"><span>49.8397° N</span><span>24.0297° E</span></div>
             </SheetContent>
           </Sheet>
         </div>
@@ -116,7 +115,7 @@ export default function Home() {
               aria-label={`${label}: ${value}`}
             >
               <span className="contact-icon" aria-hidden="true">
-                {Icon ? <Icon /> : <span className="x-icon">𝕏</span>}
+                <Icon />
               </span>
               <span className="contact-label">{label}</span>
               <span className="contact-value">{value}</span>
@@ -126,14 +125,6 @@ export default function Home() {
         <SupportButton className="footer-support" />
       </section>
 
-      <div className="corner-note corner-note-left" aria-hidden="true">
-        <strong>Roaden</strong>
-        <span>Driven by people</span>
-      </div>
-      <div className="corner-note corner-note-right" aria-hidden="true">
-        <strong>Est. 2026</strong>
-        <span>Lviv, Ukraine</span>
-      </div>
     </main>
   );
 }
