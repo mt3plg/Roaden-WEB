@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowUpRight, Mail, Send } from 'lucide-react';
+import { ArrowUpRight, Mail, Music2, Send } from 'lucide-react';
 import {
   Sheet,
   SheetContent,
@@ -39,6 +39,12 @@ const contacts = [
     href: 'https://t.me/+YchW_ySrsRZkYTJi',
     icon: Send,
   },
+  {
+    label: 'TikTok',
+    value: '@roadenapp',
+    href: 'https://www.tiktok.com/@roadenapp',
+    icon: Music2,
+  },
 ];
 
 function BrandIcon() {
@@ -49,7 +55,12 @@ function BrandIcon() {
 
 function SupportButton({ className = '' }: { className?: string }) {
   return (
-    <a className={`support-button ${className}`} href="mailto:roadenapp@gmail.com?subject=Support%20Roaden">
+    <a
+      className={`support-button ${className}`}
+      href="https://donatello.to/roaden/about"
+      target="_blank"
+      rel="noreferrer"
+    >
       <span>Support the project</span>
       <ArrowUpRight aria-hidden="true" />
     </a>
