@@ -9,6 +9,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '@/components/ui/sheet';
+import { legalLinks } from '@/lib/legal';
 
 function InstagramIcon() {
   return (
@@ -61,7 +62,7 @@ function SupportButton({ className = '' }: { className?: string }) {
       target="_blank"
       rel="noreferrer"
     >
-      <span>Support the project</span>
+      <span>Donate</span>
       <ArrowUpRight aria-hidden="true" />
     </a>
   );
@@ -135,6 +136,17 @@ export default function Home() {
         </div>
         <SupportButton className="footer-support" />
       </section>
+
+      <footer className="legal-footer">
+        <nav aria-label="Legal">
+          {legalLinks.map(({ label, path }) => (
+            <a key={path} href={path}>
+              {label}
+            </a>
+          ))}
+        </nav>
+        <span>© {new Date().getFullYear()} Roaden</span>
+      </footer>
 
     </main>
   );

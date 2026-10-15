@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://routemate.vladyslav-tsyndrin-p.chatgpt.site'),
+  metadataBase: new URL('https://roaden.space'),
   title: 'Roaden — More roads. Better people.',
   description: 'Roaden connects people through the roads they share.',
   icons: {
